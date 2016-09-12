@@ -30,8 +30,17 @@
 		border-bottom: none
 	}
 
-	header .main_mnu ul {
+	header .main_mnu nav ul {
 		display: none;
+	}
+	header .main_mnu {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	header .main_mnu li{
+		display: block;
+		padding-bottom: 20px;
 	}
 	.s_say .say_carousel .owl-nav .owl-prev {
 		left: 0px;
@@ -139,10 +148,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	header .main_mnu ul {
+		display: block !important;
+	}
 }
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	
 }

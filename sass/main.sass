@@ -23,7 +23,8 @@ html.js .loader
 		left: 50%
 		top: 50%
 		position: absolute
-
+a
+	outline: none !important;
 body
 	font-family: "RobotoLight", sans-serif
 	font-weight: normal
@@ -94,6 +95,8 @@ header
 			width: 100%
 			background-color: #FFF
 			box-shadow: 0 0 15px rgba(#000,.5)
+			.main_mnu_button
+				color: #413d4b
 			a
 				color: #413d4b
 	padding-top: 30px
@@ -116,7 +119,7 @@ header
 				text-decoration: none
 				&:hover
 					color: $main_color
-				&.active
+				&.mPS2id-highlight
 					color: $main_color
 	h1
 		font-family: "PlayfairDisplay-Black"
@@ -169,6 +172,8 @@ header
 	margin-top: 12px
 	background-color: transparent
 	color: #fff
+	position: absolute
+	right: 20px
 	border: none
 h2
 	font-family: "PlayfairDisplay-Bold"

@@ -25,6 +25,10 @@ html.js .loader .loader_inner {
   position: absolute;
 }
 
+a {
+  outline: none !important;
+}
+
 body {
   font-family: "RobotoLight", sans-serif;
   font-weight: normal;
@@ -138,6 +142,10 @@ header .top_line_wrapper.fixed {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+header .top_line_wrapper.fixed .main_mnu_button {
+  color: #413d4b;
+}
+
 header .top_line_wrapper.fixed a {
   color: #413d4b;
 }
@@ -164,7 +172,7 @@ header .main_mnu li a:hover {
   color: #00e0d0;
 }
 
-header .main_mnu li a.active {
+header .main_mnu li a.mPS2id-highlight {
   color: #00e0d0;
 }
 
@@ -236,6 +244,8 @@ header p {
   margin-top: 12px;
   background-color: transparent;
   color: #fff;
+  position: absolute;
+  right: 20px;
   border: none;
 }
 
