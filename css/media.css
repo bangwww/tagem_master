@@ -1,0 +1,148 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.s_contacts #main_form button {
+		margin-bottom: 80px;
+	}
+
+	.s_contacts #main_form input, .s_contacts #main_form textarea {
+		width: 100%;
+	}
+	
+	.s_about .logo_big_wrapper {
+		margin-bottom: 30px;
+	}
+
+	footer .footer_item {
+		border-bottom: 1px #9e98b0 solid;
+		margin-bottom: 40px;
+		padding-bottom: 40px
+	}
+
+	footer .footer_item:last-child {
+		border-bottom: none
+	}
+
+	header .main_mnu ul {
+		display: none;
+	}
+	.s_say .say_carousel .owl-nav .owl-prev {
+		left: 0px;
+	}
+	.s_say .say_carousel .owl-nav .owl-next {
+		right: 0px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.s_works .item_work {
+		width: 20.1%;
+	}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.s_teams .item_team {
+		margin-bottom: 40px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+	.s_works .item_work {
+		width: 25.1%;
+	}
+	.s_say .say_carousel .owl-nav {
+		display: none;
+	}
+	.s_contacts .clients_wrap .img_client_wrap {
+		width: 110px;
+	}
+
+	footer #newsletter button {
+		width: 52px;
+	}
+
+	header .header_carousel,
+	header .header_carousel .owl-dots {
+		margin-top: 50px;
+	}
+	
+	.s_expertise .item_expertise {
+		text-align: left;
+		margin-top: 40px;
+	}
+	.s_expertise .item_expertise p,
+	.s_expertise .item_expertise span {
+		margin-left: 0;
+	}
+
+	.main_mnu_button {
+		margin-right: 20px;
+	}
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

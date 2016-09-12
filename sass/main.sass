@@ -1,0 +1,469 @@
+@import "bourbon/bourbon"
+$main_color: #00e0d0
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "RobotoLight", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	color: #413d4b
+section, footer, header
+	padding: 70px 0
+strong
+	font-family: "Roboto-Black"
+	text-transform: uppercase
+	margin: 0
+	font-weight: normal
+.s_dark
+	color: #fff
+	.section_header
+		position: relative
+		z-index: 1
+		p
+			color: #fff
+	.btn
+		&:hover
+			color: #311d5e
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+.grad_bg
+	position: absolute
+	width: 100%
+	height: 100%
+	+linear-gradient(to right, #09052f, #311d5e)
+	opacity: .85
+	top: 0
+	left: 0
+.logo_wrap
+	display: inline-block
+.logo_img
+	display: inline-block
+	position: relative
+	bottom: 4px
+	margin-right: 10px
+.logo_txt
+	display: inline-block
+	font-family: "RobotoThin"
+	font-size: 30px
+	color: #16c8c8
+header
+	.top_line_wrapper
+		position: relative
+		z-index: 2
+		a
+			color: #fff
+		&.default
+			width: 100%
+		&.fixed
+			top: 0
+			position: fixed
+			width: 100%
+			background-color: #FFF
+			box-shadow: 0 0 15px rgba(#000,.5)
+			a
+				color: #413d4b
+	padding-top: 30px
+	width: 100%
+	height: 670px
+	background-image: url("../img/header_bg.jpg")
+	position: relative
+	.main_mnu
+		float: right
+		display: inline-block
+		ul,li
+			list-style-type: none
+			display: inline-block
+		li
+			a
+				font-family: "Roboto-Black"
+				font-size: 13px
+				text-transform: uppercase
+				margin-right: 20px
+				text-decoration: none
+				&:hover
+					color: $main_color
+				&.active
+					color: $main_color
+	h1
+		font-family: "PlayfairDisplay-Black"
+		font-size: 32px
+	.header_carousel
+		text-align: center
+		margin-top: 100px
+		.owl-dots
+			width: 100%
+			margin-top: 100px
+			text-align: center
+			.owl-dot
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background-color: transparent
+				display: inline-block
+				margin-right: 5px
+				border: 1px #fff solid
+				&.active
+					background-color: $main_color
+					border-color: $main_color
+	.middle_line
+		width: 50px
+		height: 1px
+		background-color: $main_color
+		margin: 25px auto 30px
+	p
+		max-width: 690px
+		margin: 0 auto 40px
+
+
+.btn
+	text-transform: uppercase
+	text-decoration: none
+	color: $main_color
+	font-family: "HammersmithOne-Regular"
+	font-size: 16px
+	border: $main_color 1px solid
+	padding: 12px 15px
+	line-height: 48px
+	+transition(.25s all)
+	&:hover,&:focus
+		text-decoration: none
+		background-color: $main_color
+		color: #fff
+
+.main_mnu_button
+	font-size: 20px
+	margin-top: 12px
+	background-color: transparent
+	color: #fff
+	border: none
+h2
+	font-family: "PlayfairDisplay-Bold"
+	font-size: 22px
+	text-transform: uppercase
+	margin: 0
+	font-weight: normal
+	line-height: 22px
+.s_about
+	.logo_big_wrapper
+		text-align: center
+		margin-top: 15px
+	.inner_about
+		p
+			margin: 20px 0 30px
+
+.s_video
+	padding-top: 200px
+	position: relative
+	height: 550px
+	background-image: url("../img/video_bg.jpg")
+	width: 100%
+	.inner_video
+		opacity: .85
+		text-align: center
+		font-size: 50px
+		.play_descr
+			font-family: "Roboto-Black"	
+			font-size: 16px
+			text-transform: uppercase
+			margin-top: 25px
+.section_header
+	text-align: center
+	p
+		font-family: "PlayfairDisplay-Regular"
+		color: #a3a2a4
+		margin: 18px 0
+	.after_line
+		width: 50px
+		height: 2px
+		background-color: #c6c4c9
+		margin: 0 auto
+.s_expertise
+	.item_expertise
+		text-align: center
+		margin-top: 80px
+		&:nth-child(2) span
+			background-position: -54px 0
+		&:nth-child(3) span
+			background-position: -111px 0
+		&:nth-child(4) span
+			
+			background-position: -166px 0
+		&:nth-child(5) span
+			background-position: -224px 0
+		&:nth-child(6) span
+			background-position: -279px 0
+		span
+			width: 52px
+			height: 50px
+			background-image: url("../img/iconsed.png")
+			display: block
+			margin: auto
+			margin-bottom: 30px
+		p
+			max-width: 240px
+			margin: 15px auto
+
+.s_teams
+	background-image: url("../img/team_bg.jpg")
+	position: relative
+	background-size: cover
+	.team_persons
+		margin-top: 40px
+	.item_team
+		text-align: center
+		.team_descr
+			border: 1px #78758c solid
+			width: 100%
+			padding: 20px 0
+		img
+		 width: 100%
+	.invitation
+		text-align: center
+		opacity: .85
+		p
+			color: #f3f3f3
+			margin: 50px 0 20px
+small
+	display: block
+	font-size: 13px
+	color: #fafafa
+	text-transform: uppercase
+
+.s_works
+	.s_top_line
+		margin-bottom: 60px
+		h2
+			float: left
+		a
+			float: right
+			color: #413d4b
+			span
+				position: relative
+				top: 1px
+				left: 2px
+				font-size: 18px
+			&:hover, &:focus
+				text-decoration: none
+	.item_work
+		width: (100 / 5.97) + %
+		display: inline-block
+		margin-right: -4px
+		img
+			width: 100%
+	.button_wrap
+		margin-top: 70px
+		text-align: center
+	
+.s_say
+	position: relative
+	background-image: url("../img/people_say_bg.jpg")
+	text-align: center
+	background-size: cover
+	.say_item
+		.commas
+			font-size: 100px
+			font-family: "PlayfairDisplay-Regular"
+			line-height: 80px
+		p
+			font-size: 16px
+			font-family: "PlayfairDisplay-Regular"
+			max-width: 780px
+			margin: 0 auto 40px
+		small
+			margin-top: 5px
+	.owl-dots
+		width: 100%
+		margin-top: 40px
+		text-align: center
+		.owl-dot
+			width: 45px
+			height: 45px
+			border-radius: 50%
+			display: inline-block
+			margin-right: 10px
+			vertical-align: middle
+			background-position: center center
+			background-size: cover
+			&:nth-child(1)
+				background-image: url("../img/say_1.jpg")
+			&:nth-child(2)
+				background-image: url("../img/say_2.jpg")
+			&:nth-child(3)
+				background-image: url("../img/say_3.jpg")
+			&:nth-child(4)
+				background-image: url("../img/say_4.jpg")
+			&:nth-child(5)
+				background-image: url("../img/say_5.jpg")
+			&.active
+				width: 70px
+				height: 70px
+	.owl-nav
+		div
+			font-size: 40px
+			position: absolute
+			display: inline-block
+			bottom: 8px
+			opacity: .5
+			&:hover
+				opacity: 1
+			&.owl-prev
+				left: 270px
+			&.owl-next
+				right: 280px
+
+.s_contacts
+	h2
+		margin-bottom: 35px
+	#main_form
+		input, textarea, button
+			display: block
+			margin-bottom: 25px
+		input,textarea
+			width: 90%
+			text-indent: 20px
+			border: 1px #e5e5e5 solid
+			&:focus
+				border-color: $main_color
+		input
+			height: 45px
+		textarea
+			height: 200px
+			resize: none
+			padding-top: 15px
+		button
+			background-color: transparent
+			line-height: 16px
+			padding: 12px 30px
+			&:hover
+				background-color: $main_color
+	.clients_wrap
+		text-align: center
+		.img_client_wrap
+			width: 160px
+			height: 70px
+			margin: 0 25px 23px 0
+			display: inline-block
+			img
+				width: 100%
+input, textarea, button
+	outline: none
+footer
+	position: relative
+	background-image: url("../img/footer_bg.jpg")
+	background-size: cover
+	.helps
+		ul
+			margin-top: 50px
+		ul,li
+			list-style-type: none
+			display: inline-block
+			padding: 0
+		li
+			margin:0 19px 0 0
+			a
+				text-transform: uppercase
+				color: #fff
+				text-decoration: none
+				font-family: "RobotoRegular"
+				&:hover
+					color: $main_color
+	.contact_wrap
+		.cont_logo
+			max-width: 20%
+			display: inline-block
+			vertical-align: top
+			margin-top: 8px
+			margin-right: 10px
+			font-size: 20px
+		.cont_descr
+			max-width: 80%
+			display: inline-block
+	#newsletter
+		input
+			background-color: transparent
+			border: 1px #9e98b0 solid
+			height: 40px
+			width: 229px
+			text-indent: 15px
+			margin-right: 5px
+			&:focus
+				border-color: $main_color
+		button
+			color: #000
+			background-color: #9e97b1
+			border: none
+			width: 55.5px
+			height: 40px
+			padding: 0
+			&:hover
+				background-color: #dbd4ee
+	.social_buttons
+		ul
+			margin-top: 25px
+		ul,li
+			display: inline-block
+			list-style-type: none
+			padding: 0
+		li
+			margin-right: 8px
+			a
+				color: #fff
+				width: auto
+				height: auto
+				+transition(.25s all ease)
+				&:hover 
+					div
+						background-color: #FFF
+					color: #311d5e
+				div
+					text-align: center
+					width: 35px
+					height: 35px
+					border-radius: 50%
+					border: 1px #fff solid
+				.fa
+					position: relative
+					top: 5px
+	.ps
+		text-align: right
+		margin:
+			top: 60px
+h3
+	font-size: 15px
+	font-family: "Roboto-Black"
+	text-transform: uppercase
+	font-weight: normal
