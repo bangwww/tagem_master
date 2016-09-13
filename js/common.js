@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	$(".logo_big_wrapper").animated("fadeInLeftBig","fadeOut");
 	$(".inner_about").animated("fadeInRightBig","fadeOut");
-	$(".section_header").animated("bounceInUp","fadeOut");
+	$(".section_header").animated("fadeInUp","fadeOut");
 
 
 	$(".header_carousel").owlCarousel({
