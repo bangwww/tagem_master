@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 	if($(window).scrollTop()>100)
 	$menu.removeClass("default").addClass("fixed");
-	
+
 	$(window).scroll(function(){
 		if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
 			$menu.removeClass("default").addClass("fixed");
@@ -63,6 +63,16 @@ $(document).ready(function(){
 			$menu.removeClass("fixed").addClass("default");
 		}
 		$(".main_mnu ul").slideToggle();
+	});
+
+	$('.video_popup').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
 	});
 
 
