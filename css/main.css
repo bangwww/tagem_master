@@ -65,7 +65,7 @@ strong {
   color: #fff;
 }
 
-.s_dark .btn:hover {
+.s_dark .btn:hover, .s_dark .btn:focus {
   color: #311d5e;
 }
 
@@ -228,14 +228,14 @@ header p {
   border: #00e0d0 1px solid;
   padding: 12px 15px;
   line-height: 48px;
-  -webkit-transition: 0.25s all;
-  -moz-transition: 0.25s all;
-  transition: 0.25s all;
+  -webkit-transition: 1s all, color 0.4s;
+  -moz-transition: 1s all, color 0.4s;
+  transition: 1s all, color 0.4s;
 }
 
 .btn:hover, .btn:focus {
   text-decoration: none;
-  background-color: #00e0d0;
+  box-shadow: 300px 0 0 0 #00e0d0 inset, -300px 0 0 0 #00e0d0 inset;
   color: #fff;
 }
 
@@ -245,7 +245,7 @@ header p {
   background-color: transparent;
   color: #fff;
   position: absolute;
-  right: 20px;
+  right: 10px;
   border: none;
 }
 

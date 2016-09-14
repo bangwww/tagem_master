@@ -42,6 +42,9 @@
 		display: block;
 		padding-bottom: 20px;
 	}
+	header .main_mnu li:last-child {
+		padding-bottom: 5px;
+	}
 	.s_say .say_carousel .owl-nav .owl-prev {
 		left: 0px;
 	}
@@ -88,6 +91,13 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	
+	.s_works .s_top_line h2 {
+		font-size: 20px;
+	}
+	.s_works .s_top_line a {
+		font-size: 12px;
+	}
+
 	.s_works .item_work {
 		width: 25.1%;
 	}
@@ -116,9 +126,6 @@
 		margin-left: 0;
 	}
 
-	.main_mnu_button {
-		margin-right: 20px;
-	}
 
 
 }

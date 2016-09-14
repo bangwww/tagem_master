@@ -50,7 +50,8 @@ strong
 		p
 			color: #fff
 	.btn
-		&:hover
+		&:hover, 
+		&:focus
 			color: #311d5e
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -161,10 +162,10 @@ header
 	border: $main_color 1px solid
 	padding: 12px 15px
 	line-height: 48px
-	+transition(.25s all)
+	+transition(1s all, color .4s)
 	&:hover,&:focus
 		text-decoration: none
-		background-color: $main_color
+		box-shadow: 300px 0 0 0  $main_color inset, -300px 0 0 0  $main_color inset
 		color: #fff
 
 .main_mnu_button
@@ -173,7 +174,7 @@ header
 	background-color: transparent
 	color: #fff
 	position: absolute
-	right: 20px
+	right: 10px
 	border: none
 h2
 	font-family: "PlayfairDisplay-Bold"
